@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home - Tropa Digital</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menuContainer">
+        <img class="image" src="img/logomenu.svg" alt="Tropa Digital" />
+        <ul>
+          <li>
+            <button class="active">
+              <img src="img/home.svg" class="image2" alt="" /> Inicio
+            </button>
+          </li>
+          <li>
+            <button class="active">
+              <img src="img/contact.svg" class="image2" alt="" /> Contatos
+            </button>
+          </li>
+          <li>
+            <button class="active">
+              <img src="img/relatorio.svg" class="image2" alt="" /> Relatórios
+            </button>
+          </li>
+          <li>
+            <button class="active">
+              <img src="img/contact.svg" class="image2" alt="" /> Contatos
+            </button>
+          </li>
+          <li>
+            <button class="active">
+              <img src="img/contact.svg" class="image2" alt="" /> Contatos
+            </button>
+          </li>
+          <li>
+            <button class="active">
+              <img src="img/contact.svg" class="image2" alt="" /> Contatos
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h2 class="welcome">Olá <span>Usuário</span></h2>
+        <div class="imagecontainer">
+          <div >
+            <img src="img/image.svg" alt="">
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesettin..</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesettin..</p>
+          </div>
+          <div>
+            <img src="img/image.svg" alt="">
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesettin..</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesettin..</p>
+          </div>
+          <div>
+            <img src="img/image.svg" alt="">
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesettin..</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesettin..</p>
+          </div>
+          <div>
+            <img src="img/image.svg" alt="">
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesettin..</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesettin..</p>
+          </div>
+          <div>
+            <img src="img/image.svg" alt="">
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesettin..</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesettin..</p>
+          </div>
+          <div>
+            <img src="img/image.svg" alt="">
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesettin..</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesettin..</p>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      window.onhashchange = function(e) {
+          const oldURL = e.oldURL.split('#')[1]
+          const newURL = e.newURL.split('#')[1]
+          console.log(oldURL, newURL)
+          const oldLink = document.querySelector(`.menu a[href='#${oldURL}']`)
+          const newLink = document.querySelector(`.menu a[href='#${newURL}']`)
+          oldLink && oldLink.classList.remove('selected')
+          newLink && newLink.classList.add('selected')
+      }
+  </script>
+  </body>
+</html>
